@@ -38,11 +38,11 @@ public class TesteEnvioEmail {
 					return new PasswordAuthentication(userName, password);
 				}
 			});
-			Address[] toUser = InternetAddress.parse("ezandro.developer@gmail.com, ezandrobueno@yahoo.com.br, ezandro.bueno@gmail.com");
+			Address[] toUser = InternetAddress.parse("xxxxx.developer@gmail.com, xxxxx@yahoo.com.br, xxxxx@gmail.com");  // Destinatários
 			
 			Message message = new MimeMessage(session);
-			message.setFrom(new InternetAddress(userName)); // E-mail de origem
-			message.setRecipients(Message.RecipientType.TO, toUser); // E-mail de destino
+			message.setFrom(new InternetAddress(userName)); // Remetente
+			message.setRecipients(Message.RecipientType.TO, toUser); // Destinatário(s)
 			message.setSubject("Envio de e-mail com JavaMail utilizando Gmail");
 			message.setText("Olá, programador! Você acaba de receber um e-mail enviado com JavaMail utilizando Gmail.");
 			
