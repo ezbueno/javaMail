@@ -15,8 +15,8 @@ import org.junit.Test;
 
 public class TesteEnvioEmail {
 	
-	private String userName = "ezandro.developer@gmail.com";
-	private String password = "javaMail";
+	private String userName = "informe o e-mail"; // Aqui você informa o seu e-mail cadastrado
+	private String password = "informe a senha";  // Aqui você informa a  sua senha cadastrada
 	
 	@Test
 	public void testeEmail() {
